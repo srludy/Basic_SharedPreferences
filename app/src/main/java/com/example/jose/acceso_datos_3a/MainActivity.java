@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         rMas = (RadioButton) findViewById(R.id.radioButton1);
         rFem = (RadioButton) findViewById(R.id.radioButton2);
 
-        showData.setEnabled(false);
         //Listener del Button Guardar.
         save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
                     //Hacemos commit para completar el almacenaje de la informarcion correctamente.
                     editor.commit();
                     Toast.makeText(getApplicationContext(),"Informacion preferente guardada!.", Toast.LENGTH_SHORT).show();
-                    showData.setEnabled(true);
                 }
         }
         });
